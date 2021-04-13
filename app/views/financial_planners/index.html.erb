@@ -11,45 +11,45 @@
             <div class="card-body">
               <h5 class="card-title mb-4">Cash / Cash Equivalent</h5>
               <div class="fs-6 mb-2">Current Account</div>
-              <%= f.text_field :current_accounts, class: "form-control" %>
+              <%= f.text_field :current_accounts, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Saving Account</div>
-              <%= f.text_field :saving_accounts, class: "form-control" %>
+              <%= f.text_field :saving_accounts, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Fixed Account</div>
-              <%= f.text_field :fixed_deposit, class: "form-control" %>
+              <%= f.text_field :fixed_deposit, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Others</div>
-              <%= f.text_field :others, class: "form-control" %>
+              <%= f.text_field :others_cash, class: "form-control", value: "0" %>
             </div>
           </div>
           <div class="card mt-4">
             <div class="card-body">
               <h5 class="card-title mb-4">Investment Assets</h5>
               <div class="fs-6 mb-2">EPF</div>
-              <%= f.text_field :epf, class: "form-control" %>
+              <%= f.text_field :epf, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Bonds</div>
-              <%= f.text_field :bonds, class: "form-control" %>
+              <%= f.text_field :bonds, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Insurance Cash Value</div>
-              <%= f.text_field :insurance_cash_value, class: "form-control" %>
+              <%= f.text_field :insurance_cash_value, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Unit Trusts</div>
-              <%= f.text_field :unit_trusts, class: "form-control" %>
+              <%= f.text_field :unit_trusts, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Properties</div>
-              <%= f.text_field :properties, class: "form-control" %>
+              <%= f.text_field :properties, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Shares</div>
-              <%= f.text_field :shares, class: "form-control" %>
+              <%= f.text_field :shares, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Others</div>
-              <%= f.text_field :others, class: "form-control" %>
+              <%= f.text_field :others_investment, class: "form-control", value: "0" %>
             </div>
           </div>
           <div class="card mt-4">
             <div class="card-body">
               <h5 class="card-title mb-4">Personal-Use Assets</h5>
               <div class="fs-6 mb-2">Home</div>
-              <%= f.text_field :home, class: "form-control" %>
+              <%= f.text_field :home, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Car</div>
-              <%= f.text_field :car, class: "form-control" %>
+              <%= f.text_field :car, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Jewelleries</div>
-              <%= f.text_field :jewelleries, class: "form-control" %>
+              <%= f.text_field :jewelleries, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Others</div>
-              <%= f.text_field :others, class: "form-control" %>
+              <%= f.text_field :others_personal_assets, class: "form-control", value: "0" %>
             </div>
           </div>
         </div>
@@ -59,28 +59,28 @@
             <div class="card-body">
               <h5 class="card-title">Current Liabilities</h5>
               <div class="fs-6 mb-2">Hire Purchase</div>
-              <%= f.text_field :hire_purchase, class: "form-control" %>
+              <%= f.text_field :hire_purchase, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Overdrafts</div>
-              <%= f.text_field :overdrafts, class: "form-control" %>
+              <%= f.text_field :overdrafts, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Credit Card Balance</div>
-              <%= f.text_field :credit_card_balance, class: "form-control" %>
+              <%= f.text_field :credit_card_balance, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Others</div>
-              <%= f.text_field :others, class: "form-control" %>
+              <%= f.text_field :others_liabilities, class: "form-control", value: "0" %>
             </div>
           </div>
           <div class="card mt-4">
             <div class="card-body">
               <h5 class="card-title">Long Term Liabilities</h5>
               <div class="fs-6 mb-2">Personal Loans</div>
-              <%= f.text_field :personal_loans, class: "form-control" %>
+              <%= f.text_field :personal_loans, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Housing Loans</div>
-              <%= f.text_field :housing_loans, class: "form-control" %>
+              <%= f.text_field :housing_loans, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Car Loans</div>
-              <%= f.text_field :car_loans, class: "form-control" %>
+              <%= f.text_field :car_loans, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Investment Loans</div>
-              <%= f.text_field :investment_loans, class: "form-control" %>
+              <%= f.text_field :investment_loans, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Others</div>
-              <%= f.text_field :others, class: "form-control" %>
+              <%= f.text_field :others_long_term_liabilities, class: "form-control", value: "0" %>
             </div>
           </div>
         </div>
@@ -93,33 +93,33 @@
             <div class="card-body">
               <h5 class="card-title mb-4">Employment Income</h5>
               <div class="fs-6 mb-2">Average monthly take home pay (including prorated bonus, allowances net of EPF & Tax)</div>
-              <%= f.text_field :average_monthly_take_home_pay, class: "form-control" %>
+              <%= f.text_field :average_monthly_take_home_pay, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Business Income</div>
-              <%= f.text_field :business_income, class: "form-control" %>
+              <%= f.text_field :business_income, class: "form-control", value: "0" %>
             </div>
           </div>
           <div class="card mt-4">
             <div class="card-body">
               <h5 class="card-title mb-4">Investment Income</h5>
               <div class="fs-6 mb-2">Rental</div>
-              <%= f.text_field :rental, class: "form-control" %>
+              <%= f.text_field :rental, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Dividend</div>
-              <%= f.text_field :dividend, class: "form-control" %>
+              <%= f.text_field :dividend, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Interest Income</div>
-              <%= f.text_field :interest_income, class: "form-control" %>
+              <%= f.text_field :interest_income, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Others</div>
-              <%= f.text_field :others, class: "form-control" %>
+              <%= f.text_field :others_investment_income, class: "form-control", value: "0" %>
             </div>
           </div>
           <div class="card mt-4">
             <div class="card-body">
               <h5 class="card-title mb-4">Retirement Income</h5>
               <div class="fs-6 mb-2">Pension</div>
-              <%= f.text_field :pension, class: "form-control" %>
+              <%= f.text_field :pension, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Annuities</div>
-              <%= f.text_field :annuities, class: "form-control" %>
+              <%= f.text_field :annuities, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Others</div>
-              <%= f.text_field :others, class: "form-control" %>
+              <%= f.text_field :others_retirement_income, class: "form-control", value: "0" %>
             </div>
           </div>
         </div>
@@ -129,93 +129,93 @@
             <div class="card-body">
               <h5 class="card-title mb-4">Fixed Expenses</h5>
               <div class="fs-6 mb-2">Saving</div>
-              <%= f.text_field :saving, class: "form-control" %>
+              <%= f.text_field :saving, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Regular Investment</div>
-              <%= f.text_field :regular_investment, class: "form-control" %>
+              <%= f.text_field :regular_investment, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Children Education</div>
-              <%= f.text_field :children_education, class: "form-control" %>
+              <%= f.text_field :children_education, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Mortgage Insurance Premium</div>
-              <%= f.text_field :mortgage_insurance_premium, class: "form-control" %>
+              <%= f.text_field :mortgage_insurance_premium, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Mortgage Repaymente</div>
-              <%= f.text_field :mortgage_repayment, class: "form-control" %>
+              <%= f.text_field :mortgage_repayment, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Personal Insurance</div>
-              <%= f.text_field :personal_insurance, class: "form-control" %>
+              <%= f.text_field :personal_insurance, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Rental Payment</div>
-              <%= f.text_field :rental_payment, class: "form-control" %>
+              <%= f.text_field :rental_payment, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Allowances for Parents</div>
-              <%= f.text_field :allowances_for_parents, class: "form-control" %>
+              <%= f.text_field :allowances_for_parents, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Allowances for Children</div>
-              <%= f.text_field :allowances_for_children, class: "form-control" %>
+              <%= f.text_field :allowances_for_children, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Maid</div>
-              <%= f.text_field :maid, class: "form-control" %>
+              <%= f.text_field :maid, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Conservancy Property Taxes</div>
-              <%= f.text_field :conservancy_property_taxes, class: "form-control" %>
+              <%= f.text_field :conservancy_property_taxes, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Others</div>
-              <%= f.text_field :others, class: "form-control" %>
+              <%= f.text_field :others_fixed_expenses, class: "form-control", value: "0" %>
             </div>
           </div>
           <div class="card mt-4">
             <div class="card-body">
               <h5 class="card-title">Transport</h5>
               <div class="fs-6 mb-2">Car Loan Repayment</div>
-              <%= f.text_field :car_loan_repayment, class: "form-control" %>
+              <%= f.text_field :car_loan_repayment, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Motor Insurance</div>
-              <%= f.text_field :motor_insurance, class: "form-control" %>
+              <%= f.text_field :motor_insurance, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Road Tax</div>
-              <%= f.text_field :road_tax, class: "form-control" %>
+              <%= f.text_field :road_tax, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Car Park Fees</div>
-              <%= f.text_field :car_park_fees, class: "form-control" %>
+              <%= f.text_field :car_park_fees, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Tolls</div>
-              <%= f.text_field :tolls, class: "form-control" %>
+              <%= f.text_field :tolls, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Petrol</div>
-              <%= f.text_field :petrol, class: "form-control" %>
+              <%= f.text_field :petrol, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Car Maintenance</div>
-              <%= f.text_field :car_maintenance, class: "form-control" %>
+              <%= f.text_field :car_maintenance, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Public Transport</div>
-              <%= f.text_field :public_transport, class: "form-control" %>
+              <%= f.text_field :public_transport, class: "form-control", value: "0" %>
             </div>
           </div>
           <div class="card mt-4">
             <div class="card-body">
               <h5 class="card-title">Utilities & Household Maintenance</h5>
               <div class="fs-6 mb-2">Maintenance Fees</div>
-              <%= f.text_field :maintenance_fees, class: "form-control" %>
+              <%= f.text_field :maintenance_fees, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Electricity</div>
-              <%= f.text_field :electricity, class: "form-control" %>
+              <%= f.text_field :electricity, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Water</div>
-              <%= f.text_field :water, class: "form-control" %>
+              <%= f.text_field :water, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Mobile Phone</div>
-              <%= f.text_field :mobile_phone, class: "form-control" %>
+              <%= f.text_field :mobile_phone, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Telephone Internet Broadband</div>
-              <%= f.text_field :telephone_internet_broadband, class: "form-control" %>
+              <%= f.text_field :telephone_internet_broadband, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Satellite TV</div>
-              <%= f.text_field :satellite_tv, class: "form-control" %>
+              <%= f.text_field :satellite_tv, class: "form-control", value: "0" %>
             </div>
           </div>
           <div class="card mt-4">
             <div class="card-body">
               <h5 class="card-title">Food & Necessities</h5>
               <div class="fs-6 mb-2">Groceries</div>
-              <%= f.text_field :groceries, class: "form-control" %>
+              <%= f.text_field :groceries, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Eating Out</div>
-              <%= f.text_field :eating_out, class: "form-control" %>
+              <%= f.text_field :eating_out, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Clothing and Personal Maintenances</div>
-              <%= f.text_field :clothing_and_personal_maintenances, class: "form-control" %>
+              <%= f.text_field :clothing_and_personal_maintenances, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Health and Medical</div>
-              <%= f.text_field :health_and_medical, class: "form-control" %>
+              <%= f.text_field :health_and_medical, class: "form-control", value: "0" %>
             </div>
           </div>
           <div class="card mt-4">
             <div class="card-body">
-              <h5 class="card-title">Food & Necessities</h5>
+              <h5 class="card-title">Lifestyle</h5>
               <div class="fs-6 mb-2">Tour and Family Outings</div>
-              <%= f.text_field :tour_and_family_outings, class: "form-control" %>
+              <%= f.text_field :tour_and_family_outings, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Entertainment</div>
-              <%= f.text_field :entertainment, class: "form-control" %>
+              <%= f.text_field :entertainment, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Hobbies and Sports</div>
-              <%= f.text_field :hobbies_and_sports, class: "form-control" %>
+              <%= f.text_field :hobbies_and_sports, class: "form-control", value: "0" %>
               <div class="fs-6 mb-2">Others</div>
-              <%= f.text_field :others, class: "form-control" %>
+              <%= f.text_field :others_lifestyle, class: "form-control", value: "0" %>
             </div>
           </div>
         </div>

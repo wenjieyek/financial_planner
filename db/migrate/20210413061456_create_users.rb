@@ -1,85 +1,85 @@
 class CreateUsers < ActiveRecord::Migration[5.2]
   def change
     create_table :users do |t|
-      t.decimal :current_accounts
-      t.decimal :saving_accounts
-      t.decimal :fixed_deposit
-      t.decimal :others
+      t.decimal :current_accounts, default: 0, null: false
+      t.decimal :saving_accounts, default: 0, null: false
+      t.decimal :fixed_deposit, default: 0, null: false
+      t.decimal :others_cash, default: 0, null: false
 
-      t.decimal :epf
-      t.decimal :bonds
-      t.decimal :insurance_cash_value
-      t.decimal :unit_trusts
-      t.decimal :properties
-      t.decimal :shares
-      t.decimal :others
+      t.decimal :epf, default: 0, null: false
+      t.decimal :bonds, default: 0, null: false
+      t.decimal :insurance_cash_value, default: 0, null: false
+      t.decimal :unit_trusts, default: 0, null: false
+      t.decimal :properties, default: 0, null: false
+      t.decimal :shares, default: 0, null: false
+      t.decimal :others_investment, default: 0, null: false
 
-      t.decimal :home
-      t.decimal :car
-      t.decimal :jewelleries
-      t.decimal :others
+      t.decimal :home, default: 0, null: false
+      t.decimal :car, default: 0, null: false
+      t.decimal :jewelleries, default: 0, null: false
+      t.decimal :others_personal_assets, default: 0, null: false
 
-      t.decimal :hire_purchase
-      t.decimal :overdrafts
-      t.decimal :credit_card_balance
-      t.decimal :others
+      t.decimal :hire_purchase, default: 0, null: false
+      t.decimal :overdrafts, default: 0, null: false
+      t.decimal :credit_card_balance, default: 0, null: false
+      t.decimal :others_liabilities, default: 0, null: false
 
-      t.decimal :personal_loans
-      t.decimal :housing_loans
-      t.decimal :car_loans
-      t.decimal :investment_loans
-      t.decimal :others
+      t.decimal :personal_loans, default: 0, null: false
+      t.decimal :housing_loans, default: 0, null: false
+      t.decimal :car_loans, default: 0, null: false
+      t.decimal :investment_loans, default: 0, null: false
+      t.decimal :others_long_term_liabilities, default: 0, null: false
 
-      t.decimal :average_monthly_take_home_pay
-      t.decimal :business_income
+      t.decimal :average_monthly_take_home_pay, default: 0, null: false
+      t.decimal :business_income, default: 0, null: false
 
-      t.decimal :rental
-      t.decimal :dividend
-      t.decimal :interest_income
-      t.decimal :others
+      t.decimal :rental, default: 0, null: false
+      t.decimal :dividend, default: 0, null: false
+      t.decimal :interest_income, default: 0, null: false
+      t.decimal :others_investment_income, default: 0, null: false
 
-      t.decimal :pension
-      t.decimal :annuities
-      t.decimal :others
+      t.decimal :pension, default: 0, null: false
+      t.decimal :annuities, default: 0, null: false
+      t.decimal :others_retirement_income, default: 0, null: false
 
-      t.decimal :saving
-      t.decimal :regular_investment
-      t.decimal :children_education
-      t.decimal :mortgage_insurance_premium
-      t.decimal :mortgage_repayment
-      t.decimal :personal_insurance
-      t.decimal :rental_payment
-      t.decimal :allowances_for_parents
-      t.decimal :allowances_for_children
-      t.decimal :maid
-      t.decimal :conservancy_property_taxes
-      t.decimal :others
+      t.decimal :saving, default: 0, null: false
+      t.decimal :regular_investment, default: 0, null: false
+      t.decimal :children_education, default: 0, null: false
+      t.decimal :mortgage_insurance_premium, default: 0, null: false
+      t.decimal :mortgage_repayment, default: 0, null: false
+      t.decimal :personal_insurance, default: 0, null: false
+      t.decimal :rental_payment, default: 0, null: false
+      t.decimal :allowances_for_parents, default: 0, null: false
+      t.decimal :allowances_for_children, default: 0, null: false
+      t.decimal :maid, default: 0, null: false
+      t.decimal :conservancy_property_taxes, default: 0, null: false
+      t.decimal :others_fixed_expenses, default: 0, null: false
 
-      t.decimal :car_loan_repayment
-      t.decimal :motor_insurance
-      t.decimal :road_tax
-      t.decimal :car_park_fees
-      t.decimal :tolls
-      t.decimal :petrol
-      t.decimal :car_maintenance
-      t.decimal :public_transport
+      t.decimal :car_loan_repayment, default: 0, null: false
+      t.decimal :motor_insurance, default: 0, null: false
+      t.decimal :road_tax, default: 0, null: false
+      t.decimal :car_park_fees, default: 0, null: false
+      t.decimal :tolls, default: 0, null: false
+      t.decimal :petrol, default: 0, null: false
+      t.decimal :car_maintenance, default: 0, null: false
+      t.decimal :public_transport, default: 0, null: false
 
-      t.decimal :maintenance_fees
-      t.decimal :electricity
-      t.decimal :water
-      t.decimal :mobile_phone
-      t.decimal :telephone_internet_broadband
-      t.decimal :satellite_tv
+      t.decimal :maintenance_fees, default: 0, null: false
+      t.decimal :electricity, default: 0, null: false
+      t.decimal :water, default: 0, null: false
+      t.decimal :mobile_phone, default: 0, null: false
+      t.decimal :telephone_internet_broadband, default: 0, null: false
+      t.decimal :satellite_tv, default: 0, null: false
 
-      t.decimal :groceries
-      t.decimal :eating_out
-      t.decimal :clothing_and_personal_maintenances
-      t.decimal :health_and_medical
+      t.decimal :groceries, default: 0, null: false
+      t.decimal :eating_out, default: 0, null: false
+      t.decimal :clothing_and_personal_maintenances, default: 0, null: false
+      t.decimal :health_and_medical, default: 0, null: false
 
-      t.decimal :tour_and_family_outings
-      t.decimal :entertainment
-      t.decimal :hobbies_and_sports
-      t.decimal :others
+      t.decimal :tour_and_family_outings, default: 0, null: false
+      t.decimal :entertainment, default: 0, null: false
+      t.decimal :hobbies_and_sports, default: 0, null: false
+      t.decimal :others_lifestyle, default: 0, null: false
 
       t.timestamps
     end
