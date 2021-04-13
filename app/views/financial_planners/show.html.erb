@@ -15,42 +15,42 @@
       <tbody>
         <tr>
           <th>Liquidity Ratio</th>
-          <td><%= @user.liquidity_ratio %></td>
+          <td><%= percentage_text_color(percentage: 3, value: @user.liquidity_ratio) %></td>
           <td>You should have a minimum liquidity ratio of 3 to 6 months to meet your monthly expenses.</td>
         </tr>
         <tr>
           <th>Liquidity Assets to Net Worth Ratio</th>
-          <td><%= @user.liquidity_assets_to_net_worth_ratio %></td>
+          <td><%= percentage_text_color(percentage: 15, value: @user.liquidity_assets_to_net_worth_ratio) %></td>
           <td>Your goal is to have at least 15% of your net worth in liquid assets. This is to ensure that you have not over-invested in liquid assets.</td>
         </tr>
         <tr>
           <th>Solvency Ratio</th>
-          <td><%= @user.solvency_ratio %></td>
+          <td><%= percentage_text_color(percentage: 50, value: @user.solvency_ratio) %></td>
           <td>If your solvency ratio is more than 50%, it means you have a strong ability to pay your financial obligations.</td>
         </tr>
         <tr>
           <th>Debt to Asset Ratio</th>
-          <td><%= @user.debt_to_asset_ratio %></td>
+          <td><%= percentage_text_color(percentage: 50, value: @user.debt_to_asset_ratio, inverse: true) %></td>
           <td>A gearing ratio of below 50% is good. However, a gearing ratio of less than 10% means that you are under geared. Some good debts may be necessary to capitalise on existing investment opportunities.</td>
         </tr>
         <tr>
           <th>Saving Ratio</th>
-          <td><%= @user.saving_ratio %></td>
+          <td><%= percentage_text_color(percentage: 30, value: @user.saving_ratio) %></td>
           <td>The national savings rate is 30%. Saving one third of your income ensures that you are not over-spending and your cash flow position is healthy.</td>
         </tr>
         <tr>
           <th>Debt Service Ratio</th>
-          <td><%= @user.debt_service_ratio %></td>
-          <td>This ratio show how much income is used to pay depts. The recommended guideline is 35% or less and a ratio of 45% is considered excessive.</td>
+          <td><%= percentage_text_color(percentage: 35, value: @user.debt_service_ratio, inverse: true) %></td>
+          <td>This ratio show how much income is used to pay debts. The recommended guideline is 35% or less and a ratio of 45% is considered excessive.</td>
         </tr>
         <tr>
           <th>Non-Mortgage Debt Service Ratio</th>
-          <td><%= @user.non_mortgage_debt_service_ratio %></td>
+          <td><%= percentage_text_color(percentage: 15, value: @user.non_mortgage_debt_service_ratio, inverse: true) %></td>
           <td>This measures the level of debt, but excludes mortgage payment. The guideline is less than 15%.</td>
         </tr>
         <tr>
           <th>Net Investment Assets to Net Worth Ratio</th>
-          <td><%= @user.net_investment_assets_to_net_worth_ratio %></td>
+          <td><%= percentage_text_color(percentage: 50, value: @user.net_investment_assets_to_net_worth_ratio) %></td>
           <td>This ratio compares the value of your investment assets with net worth and indicates how well you are accumulating for your future. The guideline is greater than 50%. You should have more investment to make sure that your money growth to cover inflation.</td>
         </tr>
       </tbody>

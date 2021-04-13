@@ -75,7 +75,7 @@
 #
 class User < ApplicationRecord
   def liquidity_ratio
-    (total_cash / total_outflow) * 100
+    total_cash / total_outflow
   end
 
   def liquidity_assets_to_net_worth_ratio
@@ -87,7 +87,7 @@ class User < ApplicationRecord
   end
 
   def debt_to_asset_ratio
-    (total_assets / total_liabilities) * 100
+    (total_liabilities / total_assets) * 100
   end
 
   def saving_ratio
