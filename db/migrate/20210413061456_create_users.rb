@@ -55,31 +55,31 @@ class CreateUsers < ActiveRecord::Migration[5.2]
       t.decimal :conservancy_property_taxes
       t.decimal :others
 
-      t.decimal :current_accounts
-      t.decimal :current_accounts
-      t.decimal :current_accounts
-      t.decimal :current_accounts
-      t.decimal :current_accounts
-      t.decimal :current_accounts
-      t.decimal :current_accounts
-      t.decimal :current_accounts
+      t.decimal :car_loan_repayment
+      t.decimal :motor_insurance
+      t.decimal :road_tax
+      t.decimal :car_park_fees
+      t.decimal :tolls
+      t.decimal :petrol
+      t.decimal :car_maintenance
+      t.decimal :public_transport
 
-      t.decimal :current_accounts
-      t.decimal :current_accounts
-      t.decimal :current_accounts
-      t.decimal :current_accounts
-      t.decimal :current_accounts
-      t.decimal :current_accounts
+      t.decimal :maintenance_fees
+      t.decimal :electricity
+      t.decimal :water
+      t.decimal :mobile_phone
+      t.decimal :telephone_internet_broadband
+      t.decimal :satellite_tv
 
-      t.decimal :current_accounts
-      t.decimal :current_accounts
-      t.decimal :current_accounts
-      t.decimal :current_accounts
+      t.decimal :groceries
+      t.decimal :eating_out
+      t.decimal :clothing_and_personal_maintenances
+      t.decimal :health_and_medical
 
-      t.decimal :current_accounts
-      t.decimal :current_accounts
-      t.decimal :current_accounts
-      t.decimal :current_accounts
+      t.decimal :tour_and_family_outings
+      t.decimal :entertainment
+      t.decimal :hobbies_and_sports
+      t.decimal :others
 
       t.timestamps
     end
