@@ -83,7 +83,7 @@ class User < ApplicationRecord
   end
 
   def total_liabilities
-    hire_purchase + overdrafts + credit_card_bala + others + personal_loans + housing_loans + car_loans + investment_loans + others
+    hire_purchase + overdrafts + credit_card_balance + others + personal_loans + housing_loans + car_loans + investment_loans + others
   end
 
   def net_worth
